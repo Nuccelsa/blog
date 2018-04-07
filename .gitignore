@@ -1,0 +1,7 @@
+/vendor
+/wp
+
+/content/languages/
+/content/themes/twentyseventeen
+wp-config.php
+todo.md

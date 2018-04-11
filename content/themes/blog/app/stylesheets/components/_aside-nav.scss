@@ -1,0 +1,25 @@
+
+ /* Aside nav */
+ .second__nav {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4em;
+    position: fixed;
+    /* background-color: $light; */
+    background-image: transparentize($dark, 1);
+    /* opacity :0.5; */
+    z-index:10;
+}
+
+.second__nav__link {
+    color: $primary;
+    font-size: 1.5em;
+    height : 2em;
+}
+
+@media (min-width: $bp-mobile-s) and (max-width: $bp-tablet) {
+    .second__nav {
+        display: none;
+    }
+}

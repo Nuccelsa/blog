@@ -1,3 +1,8 @@
 @import 'abstracts/variables',
-        'base/base',
-        'components/nav';
+        'base/base';
+
+@import 'components/aside-nav',
+        'components/main-nav';
+
+@import 'pages/home';
+        

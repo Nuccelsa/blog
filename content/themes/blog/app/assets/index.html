@@ -34,7 +34,7 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="recherche" placeholder="Recherche..." aria-label="Recherche">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i>Trouver</button>
+              <button class="btn button__search my-2 my-sm-0" type="submit"><i class="fa fa-search mr-2" aria-hidden="true"></i>Trouver</button>
             </form>
           </div>
         </nav> <!-- Fin top nav -->
@@ -43,13 +43,16 @@
         <nav class="second__nav navbar" id="sideNav">
               <ul class="navbar-nav" role="list">
                 <li class="nav-item" role="listitem">
-                  <a class="nav-link" href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                  <a class="nav-link second__nav__link" href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
                 </li>
                 <li class="nav-item" role="listitem">
-                  <a class="nav-link" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  <a class="nav-link second__nav__link" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 </li>
                 <li class="nav-item" role="listitem">
-                  <a class="nav-link" href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                  <a class="nav-link second__nav__link" href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item" role="listitem">
+                  <a class="nav-link second__nav__link" href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
                 </li>
               </ul>
         </nav> <!-- Fin aside nav -->
@@ -67,7 +70,7 @@
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol> -->
-            <h2 class="h2 banner__slider__title" style="z-index: 10;">Sur les routes de la vie</h2>
+            <!-- <h2 class="h2 banner__slider__title" style="z-index: 10;">Sur les routes de la vie</h2> -->
             <div class="banner__slider carousel-inner" style="height: 20em";>
               <div class="carousel-item active">
                 <img class="d-block w-100" src="img/banner1.jpg" alt="First slide">
@@ -92,49 +95,48 @@
       </section> <!-- Fin section banner -->
 
       <!-- Articles -->
-      <div class="container">
-        <section class="posts mt-5 d-flex flex-wrap">
+      <div class="content">
+        <section class="last__posts mt-5 d-flex flex-wrap">
 
-          <article class="posts__card" style="background-image:url(img/ex1.jpg);">
-              <h2 class="posts__card__title">
+          <article class="last__posts__card" style="background-image:url(img/ex1.jpg);">
+              <h2 class="last__posts__card__title">
                   <a href="#">the_title</a>
               </h2>
-              <div class="posts__card__content">
+              <div class="last__posts__card__content">
                   <p>the_excerpt</p>
               </div>
           </article>
-          <article class="posts__card" style="background-image:url(img/ex1.jpg);">
-            <h2 class="posts__card__title">
+          <article class="last__posts__card" style="background-image:url(img/ex1.jpg);">
+            <h2 class="last__posts__card__title">
                 <a href="#">the_title</a>
             </h2>
-            <div class="posts__card__content">
+            <div class="last__posts__card__content">
                 <p>the_excerpt</p>
             </div>
           </article>
-          <article class="posts__card" style="background-image:url(img/ex1.jpg);">
-            <h2 class="posts__card__title">
+          <article class="last__posts__card" style="background-image:url(img/ex1.jpg);">
+            <h2 class="last__posts__card__title">
                 <a href="#">the_title</a>
             </h2>
-            <div class="posts__card__content">
+            <div class="last__posts__card__content">
                 <p>the_excerpt</p>
             </div>
           </article>
-          <article class="posts__card" style="background-image:url(img/ex1.jpg);">
-            <h2 class="posts__card__title">
+          <article class="last__posts__card" style="background-image:url(img/ex1.jpg);">
+            <h2 class="last__posts__card__title">
                 <a href="#">the_title</a>
             </h2>
-            <div class="posts__card__content">
+            <div class="last__posts__card__content">
                 <p>the_excerpt</p>
             </div>
           </article>
 
         </section> <!-- Fin articles -->
+      </div> <!-- Fin div content ml-20 -->
 
-      </div> <!-- Fin div container -->
 
-
-      <footer class="footer">
-        <nav class="footer__nav">
+      <footer class="footer container">
+        <nav class="footer__nav ">
 
           <ul>
             <li>

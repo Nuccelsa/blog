@@ -1,8 +1,17 @@
-@import 'abstracts/variables',
-        'base/base';
+@import 'abstracts/mixins',
+        'abstracts/variables';
+
+@import 'base/base';
 
 @import 'components/aside-nav',
+        'components/slider',
         'components/main-nav';
 
-@import 'pages/home';
+@import 'layout/homepage';
+
+@import 'pages/archives',
+        'pages/bikes',
+        'pages/home',
+        'pages/presentation';
+
         

@@ -1,0 +1,23 @@
+body {
+  @include body-font;
+  color : $shadow-4;
+  background-color: $light;
+}
+
+/* Comportement texte sélectionné */
+::selection {
+  background-color: $primary;
+  color : $light;
+}
+
+/* Comportement des liens */
+a {
+  color : $shadow-6;
+  transition : 1s;
+  text-decoration: underline;
+  transition : $medium;
+  &:hover {
+    color: $primary;
+  }
+}
+

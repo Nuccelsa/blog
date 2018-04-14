@@ -1,13 +1,13 @@
-/* Homepage */
+/* Spécifique à la homepage */
 
-/* Section derniers articles */
-.last__posts {
-    min-height: 30vh;
-
-    .last__posts__card {
-        width: 30%;
-
-    }
+/* Media queries du .main = sont exclus slider et main-nav */
+.main {
+  @media (min-width : $bp-mobile-s) and (max-width : $bp-tablet) {
+    margin :2em;
+  }
+  @media (min-width : $bp-tablet) {
+    margin: 2em 5em 0 5em;
+  }
 }
 
 

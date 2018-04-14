@@ -1,0 +1,60 @@
+/* Section derniers articles */
+.last__posts {
+  min-height : 30vh;
+  margin-top : 5em;
+
+  /* un article */
+  &__card {
+    padding: 1.5em 1em;
+    width: 25%;
+    @media (min-width : $bp-mobile-s) and (max-width : $bp-tablet) {
+      width : 100%;
+    }
+
+    @media (min-width : $bp-tablet) and (max-width : $bp-laptop-s) {
+      width : 50%;
+    }
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index:10;
+    /* opacity:0.8; */
+    /* titre-lien */
+    &__title, h2 {
+      @include title-font;
+      padding-left: 1.2em;
+      margin-top: 1.5em;
+      @media (min-width : $bp-mobile-s) and (max-width : $bp-laptop-s) {
+        margin-top: 0.5em;
+      }
+      & a {
+        color : $light;
+      }
+    }
+    /* extrait */
+    &__content {
+      padding:  0 4.5em 0 4.5em;;
+      margin-top: 1em;
+      color : $light;
+    }
+
+    /* effet over */
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0; 
+      bottom: 0; 
+      left: 0; 
+      right: 0;
+      opacity :0.9;
+      z-index: -1;
+      transition : opacity $fast;
+    }
+    &:hover::after {
+      background-color: $primary !important;
+      opacity: 0.1;
+    }
+  
+  }
+}

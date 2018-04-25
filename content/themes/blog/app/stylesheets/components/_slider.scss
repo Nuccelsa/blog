@@ -1,4 +1,24 @@
 .carousel-inner {
-  height : 40em;
-  
+  height: 30em;
+  @media (min-width: $bp-mobile-s) and (max-width:$bp-mobile-m) {
+    height : 10em;
+  }
+  @media (min-width: $bp-mobile-m) and (max-width:$bp-mobile-l) {
+    height : 12em;
+  }
+  @media (min-width: $bp-mobile-l) and (max-width:$bp-tablet) {
+    height : 15em;
+  }
+  @media (min-width: $bp-tablet) and (max-width:$bp-laptop-s) {
+    height : 22em;
+  }
+  @media (min-width: $bp-laptop-s) and (max-width:$bp-laptop-m) {
+    height : 33em;
+  }
+  @media (min-width: $bp-laptop-m) and (max-width:$bp-4k) {
+    height : 45em;
+  }
+  @media (min-width:$bp-4k) {
+    height : 75em;
+  }
 }

@@ -1,7 +1,7 @@
 body {
   @include body-font;
   color : $shadow-4;
-  background-color: $light;
+  background-color: $shadow-6;
 }
 
 /* Comportement texte sélectionné */
@@ -10,14 +10,39 @@ body {
   color : $light;
 }
 
-/* Comportement des liens */
-a {
-  color : $shadow-6;
+/* 
+Comportement des liens
+ */
+// Liens de la main nav
+a, .main__nav .navbar-brand, .main__nav__ul .nav-item .nav-link {
+  color : $shadow-2;
   transition : 1s;
-  text-decoration: underline;
-  transition : $medium;
+  text-decoration: none;
+  transition : color $medium;
   &:hover {
     color: $primary;
+    text-decoration: none;
   }
 }
 
+// Liens de la nav aside
+a, .second__nav__link {
+  color : $primary;
+  transition : 1s;
+  transition : color $medium;
+  &:hover {
+    color: $shadow-3;
+  }
+}
+
+// Liens du footer
+a, .footer__nav__list__item__link {
+  color : $shadow-2;
+  text-decoration: underline;
+  transition : 1s;
+  transition : color $medium;
+  &:hover {
+    color: $primary;
+    text-decoration: underline;
+  }
+}

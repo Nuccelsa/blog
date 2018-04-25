@@ -1,39 +1,39 @@
 /* Main nav */
-
 .navbar-brand, .main__nav__ul {
   @include title-font;
-  font-size: 1.3em;
+  font-size: 1.5em;
+}
+
+.navbar  {
+  background-color: $shadow-6 !important;
 }
 
 .main__nav {
   z-index: 20;
   padding-bottom : 1.5em;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     180deg,
-    $shadow-2,
-    $light
-  );
-  /* Links */
-  a {
-    text-decoration: none;
-  }
+    $shadow-3,
+    $shadow-6
+  ); */
+
   /* Zone recherche */
   .form-control {
     border-radius : 0;
   }
   .form-control:focus {
-    border-color: $shadow-1;
-    box-shadow: 0 0 0 0.2rem $shadow-1;
+    border-color: $dark;
+    box-shadow: 0 0 0 0.2rem $shadow-3;
   }
   .button__search {
     border-radius : 0;
     font-weight: bold;
+    font-size: 1em;
     color: $light;
-    /* border-color:$primary; */
     background-color: $primary;
     transition : background-color $medium, color $medium;
       &:hover {
-        background-color : $shadow-4;
+        background-color : $shadow-3;
         color: $light;
       }
       &:focus {

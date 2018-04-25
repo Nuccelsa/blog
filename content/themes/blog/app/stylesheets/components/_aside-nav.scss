@@ -8,16 +8,13 @@
   position: fixed;
   background-image: transparentize($light, 1);
   z-index:10;
+
+  .second__nav__link {
+    font-size: 2em;
+    height : 2.5em;
 }
 
-.second__nav__link {
-  color: $primary;
-  font-size: 1.8em;
-  height : 2.5em;
-  transition : color $medium;
-  &:hover {
-    color: $shadow-4;
-  }
+
 }
 
 @media (min-width: $bp-mobile-s) and (max-width: $bp-tablet) {

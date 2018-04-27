@@ -1,7 +1,11 @@
 /* Section derniers articles */
+h2 {
+  margin-top: 3em;
+}
+
 .last__posts {
   min-height : 30vh;
-  margin-top : 5em;
+  padding-top : 1.5em;
 
   /* Un article */
   &__card {

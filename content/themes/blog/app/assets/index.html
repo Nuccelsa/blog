@@ -41,7 +41,7 @@
           </div>
         </nav> <!-- Fin top nav -->
 
-        <!-- Aside nav -->
+        <!-- Aside nav visible à partir de laptop -->
         <nav class="second__nav navbar" id="sideNav">
               <ul class="second__nav__ul navbar-nav" role="list">
                 <li class="nav-item" role="listitem">
@@ -80,7 +80,7 @@
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol> -->
-            <h2 class="h2 banner__slider__title" style="z-index: 10;">Sur les routes de la vie</h2>
+            <h1 class="h1 banner__slider__title" style="z-index: 10;">Sur les routes de la vie</h1>
             <div class="banner__slider carousel-inner">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="img/banner1.jpg" alt="First slide">
@@ -105,67 +105,119 @@
       </section> <!-- Fin section banner -->
 
       <!-- Articles -->
-      <div class="content">
-        <section class="last__posts d-flex flex-wrap">
+      <section class="content">
 
-          <article class="last__posts__card" style="background-image:url(img/ex1.jpg);">
-              <h2 class="last__posts__card__title">
-                  <a href="#">the_title</a>
-              </h2>
-              <div class="last__posts__card__content">
-                  <p>the_excerpt</p>
-              </div>
-          </article>
-          <article class="last__posts__card" style="background-image:url(img/ex1.jpg);">
-            <h2 class="last__posts__card__title">
-                <a href="#">the_title</a>
-            </h2>
-            <div class="last__posts__card__content">
-                <p>the_excerpt</p>
-            </div>
-          </article>
-          <article class="last__posts__card" style="background-image:url(img/ex1.jpg);">
-            <h2 class="last__posts__card__title">
-                <a href="#">the_title</a>
-            </h2>
-            <div class="last__posts__card__content">
-                <p>the_excerpt</p>
-            </div>
-          </article>
-          <article class="last__posts__card" style="background-image:url(img/ex1.jpg);">
-            <h2 class="last__posts__card__title">
-                <a href="#">the_title</a>
-            </h2>
-            <div class="last__posts__card__content">
-                <p>the_excerpt</p>
-            </div>
-          </article>
+        <h2 class="content__title">Derniers articles</h2>
 
-        </section> <!-- Fin articles -->
-      </div> <!-- Fin div content ml-20 -->
+        <div class="last__posts d-flex flex-wrap">
+
+        <article class="last__posts__card" style="background-image:url(img/ex1.jpg);">
+            <h2 class="last__posts__card__title">
+                <a href="#">the_title</a>
+            </h2>
+            <div class="last__posts__card__content">
+                <p>the_excerpt</p>
+            </div>
+        </article>
+        <article class="last__posts__card" style="background-image:url(img/ex1.jpg);">
+          <h2 class="last__posts__card__title">
+              <a href="#">the_title</a>
+          </h2>
+          <div class="last__posts__card__content">
+              <p>the_excerpt</p>
+          </div>
+        </article>
+        <article class="last__posts__card" style="background-image:url(img/ex1.jpg);">
+          <h2 class="last__posts__card__title">
+              <a href="#">the_title</a>
+          </h2>
+          <div class="last__posts__card__content">
+              <p>the_excerpt</p>
+          </div>
+        </article>
+        <article class="last__posts__card" style="background-image:url(img/ex1.jpg);">
+          <h2 class="last__posts__card__title">
+              <a href="#">the_title</a>
+          </h2>
+          <div class="last__posts__card__content">
+              <p>the_excerpt</p>
+          </div>
+        </article>
+
+      </div>
+      </section> <!-- Fin articles -->
 
 
       <footer class="footer container">
-        <nav class="footer__nav ">
+        <div class="footer__nav row d-flex justify-content-between">
 
-          <ul class="footer__nav__list">
-            <li class="footer__nav__list__item">
-              <a href="" class="footer__nav__list__item__link">RSS</a>
-            </li>
-            <li class="footer__nav__list__item">
-              Archives :
-              <a href="" class="footer__nav__list__item__link">Par date</a>
-            </li>
-            <li class="footer__nav__list__item">
-              Catégories
-              <a href="" class="footer__nav__list__item__link">cat 1</a>
-            </li>
-            <li class="footer__nav__list__item">
-              <a href="" class="footer__nav__list__item__link">Connexion</a>
-            </li>           
-          </ul>
+              <div class="footer__nav__list-item col-6 col-lg-3">
+                Archives :
+                <ul class="footer__nav__list-item__ul">
+                  <li class="footer__nav__list-item__li">
+                    <a href="" class="footer__nav__list-item__link">Juin 2018</a>
+                  </li>
+                  <li class="footer__nav_list-item__li">
+                    <a href="" class="footer__nav__list-item__link">Janvier 2018</a>
+                  </li>
+                  <li class="footer__nav_list-item__li">
+                    <a href="" class="footer__nav__list-item__link">Juin 2017</a>
+                  </li>
+                </ul>
+              </div>
 
-        </nav> <!-- Fin nav footer -->
+              <div class="footer__nav__list-item col-6 col-lg-3">
+                Catégories
+                <ul class="footer__nav__list-item__ul">
+                    <li class="footer__nav_list-item__li">
+                      <a href="" class="footer__nav__list-item__link">Catégorie 1</a>
+                    </li>
+                    <li class="footer__nav__list-item__li">
+                      <a href="" class="footer__nav__list-item__link">Catégorie 2</a>
+                    </li>
+                    <li class="footer__nav__list-item__li">
+                      <a href="" class="footer__nav__list-item__link">Catégorie 3</a>
+                    </li>
+                  </ul>
+              </div>
+
+              <div class="footer__nav__list-item col-6 col-lg-3">
+                  <a href="" class="footer__nav__list-item__link">Flux RSS</a>
+              </div>
+  
+              <div class="footer__nav__list-item col-6 col-lg-3">
+                  <a href="" class="footer__nav__list-item__link">Connexion</a>
+              </div>
+
+              <!-- Social nav pour mobile et tablet -->
+              <nav class="social__nav col-12">
+                <ul class="social__nav__ul d-flex justify-content-around" role="list">
+                  <li class="nav-item" role="listitem">
+                    <a class="nav-link social__nav__link" href="">
+                      <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item" role="listitem">
+                    <a class="nav-link social__nav__link" href="">
+                      <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item" role="listitem">
+                    <a class="nav-link social__nav__link" href="">
+                      <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item" role="listitem">
+                    <a class="nav-link social__nav__link" href="">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+            </nav> <!-- Fin aside nav -->
+
+         
+
+        </div> <!-- Fin div row -->
       </footer>
 
 

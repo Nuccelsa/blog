@@ -26,7 +26,7 @@ a, .main__nav .navbar-brand, .main__nav__ul .nav-item .nav-link {
 }
 
 // Liens de la nav aside
-a, .second__nav__link {
+a, .second__nav__link, .social__nav__link {
   color : $primary;
   transition : 1s;
   transition : color $medium;
@@ -36,7 +36,7 @@ a, .second__nav__link {
 }
 
 // Liens du footer
-a, .footer__nav__list__item__link {
+a, .footer__nav__list-item__link {
   color : $shadow-2;
   text-decoration: underline;
   transition : 1s;
@@ -45,4 +45,14 @@ a, .footer__nav__list__item__link {
     color: $primary;
     text-decoration: underline;
   }
+}
+
+/* 
+Listes
+ */
+ ul {
+   padding: 0;
+ }
+li {
+   list-style: none;
 }

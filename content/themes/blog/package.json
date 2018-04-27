@@ -18,7 +18,8 @@
     "normalize.css": "^8.0.0",
     "popper.js": "^1.14.3",
     "stellar.js": "^0.6.5",
-    "wow.js": "^1.2.2"
+    "wow.js": "^1.2.2",
+    "hoek": "5.0.3"
   },
   "devDependencies": {
     "browser-sync-brunch": "0.0.9",

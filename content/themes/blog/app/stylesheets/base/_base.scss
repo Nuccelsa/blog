@@ -16,7 +16,6 @@ Comportement des liens
 // Liens de la main nav
 a, .main__nav .navbar-brand, .main__nav__ul .nav-item .nav-link {
   color : $shadow-2;
-  transition : 1s;
   text-decoration: none;
   transition : color $medium;
   &:hover {
@@ -28,7 +27,6 @@ a, .main__nav .navbar-brand, .main__nav__ul .nav-item .nav-link {
 // Liens de la nav aside
 a, .second__nav__link, .social__nav__link {
   color : $primary;
-  transition : 1s;
   transition : color $medium;
   &:hover {
     color: $shadow-3;
@@ -39,7 +37,6 @@ a, .second__nav__link, .social__nav__link {
 a, .footer__nav__list-item__link {
   color : $shadow-2;
   text-decoration: underline;
-  transition : 1s;
   transition : color $medium;
   &:hover {
     color: $primary;

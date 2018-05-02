@@ -25,7 +25,7 @@ a, .main__nav .navbar-brand, .main__nav__ul .nav-item .nav-link {
 }
 
 // Liens de la nav aside
-a, .second__nav__link, .social__nav__link {
+.second__nav__link, .social__nav__link {
   color : $primary;
   transition : color $medium;
   &:hover {
@@ -34,7 +34,7 @@ a, .second__nav__link, .social__nav__link {
 }
 
 // Liens du footer
-a, .footer__nav__list-item__link {
+.footer__nav__list-item__link {
   color : $shadow-2;
   text-decoration: underline;
   transition : color $medium;

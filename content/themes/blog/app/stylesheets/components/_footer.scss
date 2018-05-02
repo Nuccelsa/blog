@@ -1,17 +1,46 @@
+/* FOOTER */
+
 .footer {
-  padding-top: 4em;
+  padding-top: 3em;
   background-image: linear-gradient(90deg, $shadow-6, $shadow-4, $shadow-6);
-  @media (min-width: $bp-tablet) {
-    padding-bottom: 2.5em;
+  padding-bottom: 2.5em;
+  
+  // Titre et copyright
+  &__title {
+    background: -webkit-gradient(linear, left top, left bottom, from($shadow-4), to($dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin:0;
+  }
+  &__author {
+    color: $dark;
+    font-size:1.2em;
+  }
+
+  // Liens du footer
+  .footer__nav__list-item {
+    margin-top: 1.2em;
+    .subtitle {
+      color: $shadow-2;
+      font-size:1.2em;
+    }
   }
 
   // Links réseaux sociaux remplaçants la aside nav en version mobile et tablette
   .social__nav {
     @media (min-width: $bp-tablet) {
-        display: none;
+      display: none;
     }
     padding-top: 1.5em;
-    font-size: 1.5em;
+    font-size: 1.8em;
+  }
+
+  // Site créé par
+  &__dev, &__dev__link  {
+      color: $dark;
+      font-style: italic;
+      @media (min-width: $bp-tablet) { 
+        padding-top: 3.5em;
+      }
   }
 }
-

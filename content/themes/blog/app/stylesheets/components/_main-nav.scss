@@ -1,21 +1,25 @@
 /* Main nav */
 .navbar-brand, .main__nav__ul {
   @include title-font;
-
 }
-
 .navbar  {
   background-color: $shadow-6 !important;
 }
+.navbar-toggler-icon {
+  background-color: $shadow-5;
+}
 
 .main__nav {
+  position: fixed;
+  top:0; 
+  width: 100%;
   z-index: 20;
-  padding-bottom : 1.5em;
-  /* background-image: linear-gradient(
-    180deg,
-    $shadow-3,
-    $shadow-6
-  ); */
+  padding-bottom : 1.1em;
+  font-size:1.3em;
+
+  .navbar-brand {
+    font-size:1.3em;
+  }
 
   /* Zone recherche */
   .form-control {
@@ -28,7 +32,6 @@
   .button__search {
     border-radius : 0;
     font-weight: bold;
-    font-size: 1em;
     color: $light;
     background-color: $primary;
     transition : background-color $medium, color $medium;

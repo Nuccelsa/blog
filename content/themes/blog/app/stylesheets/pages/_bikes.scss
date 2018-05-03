@@ -18,27 +18,27 @@
     .bikes__shape {
         @media (min-width: $bp-mobile-s) {
             width: 70%;
-            height: 15%;
+            height: 30%;
         }
         @media (min-width: $bp-mobile-m) {
-            width: 58%;
-            height: 18%;
+            width: 60%;
+            height: 30%;
         }
         @media (min-width: $bp-mobile-l) {
             width: 55%;
-            height: 20%;
+            height: 35%;
         }
         @media (min-width: $bp-tablet) {
-            width: 35%;
-            height: 28%;
+            width: 40%;
+            height: 40%;
         }
         @media (min-width: $bp-laptop-s) {
             width: 60%;
-            height: 25%;
+            height: 40%;
         }
         @media (min-width: $bp-laptop-m) {
             width: 60%;
-            height: 32%;
+            height: 46%;
         }
         position: relative;
         overflow:hidden;
@@ -46,10 +46,10 @@
         position: relative;
         border-radius:50%; 
         margin: 0 auto 6em;
-        transition: $slow;
+        transition: $medium;
         &:hover {
             transform: scale(1.5);
-            transition: $slow;
+            transition: $medium;
         }
         /* Image */
         .bikes__img {
@@ -67,10 +67,10 @@
             background-size: cover;
             background-repeat: no-repeat; 
             background-position: center;
-            transition: transform, $slow;
+            transition: transform, $medium;
             &:hover {
                 transform: scale(1.5);
-                transition: $slow;
+                transition: $medium;
             }
         }
 

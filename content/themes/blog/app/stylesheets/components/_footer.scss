@@ -17,13 +17,17 @@
     font-size:1.2em;
   }
 
-  // Liens du footer
+  // Sous titres du foter
   .footer__nav__list-item {
     margin-top: 1.2em;
     .subtitle {
       color: $shadow-2;
       font-size:1.2em;
     }
+  }
+  // Liens du footer
+  .footer__nav__list-item__link:hover {
+    color: $primary;
   }
 
   // Links réseaux sociaux remplaçants la aside nav en version mobile et tablette

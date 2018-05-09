@@ -1,5 +1,4 @@
 .carousel-inner {
-  height: 30em;
   @media (min-width: $bp-mobile-s) and (max-width:$bp-mobile-m) {
     height : 10em;
   }
@@ -16,7 +15,7 @@
     height : 33em;
   }
   @media (min-width: $bp-laptop-m) and (max-width:$bp-4k) {
-    height : 45em;
+    height : 50em;
   }
   @media (min-width:$bp-4k) {
     height : 75em;

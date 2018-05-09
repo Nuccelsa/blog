@@ -1,0 +1,38 @@
+.bike-race {
+    
+    &__title {
+    margin: 4em 0 3em 0;
+    }
+
+    &__container {
+        overflow:hidden;
+        height: 500px;
+        box-sizing: border-box;
+        box-shadow: 0 0 50px $shadow-3;
+        margin-bottom: 5em;
+        transition :  $slow;
+        
+        .bike-race__image {
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat; 
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            transition :  $slow;
+        }
+        /* .bike-race__overlay {
+        } */
+        
+    }
+
+    .bike-race__image:hover {
+        transform: rotate(-10deg) scale(1.9);
+        transition: transform $slowliest;
+    }
+
+    &__content {
+        text-align: center;
+    }
+}
+

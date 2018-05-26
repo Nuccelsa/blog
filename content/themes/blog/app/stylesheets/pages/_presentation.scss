@@ -1,1 +1,75 @@
 /* Spécifique à la présentation */
+.presentation {
+    @media (min-width : $bp-mobile-s) and (max-width : $bp-tablet) {
+      margin :8em 2em 0 2em;
+    }
+    @media (min-width : $bp-tablet) {
+      margin: 8em 5em 0 5em;
+    }
+
+    /* Titre */
+    &__title {
+        text-align: center;
+        @media (min-width : $bp-mobile-s) and (max-width : $bp-tablet) {
+            margin :0.5em;
+        }
+        margin-bottom: 2em;
+    }
+
+    /* Contenu : texte + image */
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        .paragraphe2 {
+            margin-top: 1.5em;
+        }
+        .paragraphe1__txt {
+            order:1;
+            @media (min-width : $bp-mobile-s) and (max-width : $bp-tablet) {
+                padding: 1em 0 0 0;
+            }
+            padding: 4em 3em 0 0;
+        }
+        .paragraphe1__img{
+            order:2;
+        }
+        .paragraphe2__txt {
+            @media (min-width : $bp-mobile-s) and (max-width : $bp-tablet) {
+                order: 1;
+            }
+            order: 2;
+            @media (min-width : $bp-mobile-s) and (max-width : $bp-tablet) {
+                padding: 1em 0 0 0;
+            }
+            padding: 3em 0 0 3em;
+            @media (min-width: $bp-4k) {
+                padding: 6em 0 0 1em;
+            }
+        }
+        .paragraphe2__img{
+            @media (min-width : $bp-mobile-s) and (max-width : $bp-tablet) {
+                order: 2;
+            }
+            order: 1;
+        }
+        .paragraphe1__txt, .paragraphe2__txt {
+            text-align: center;
+            line-height: 2em;
+        }
+        .paragraphe1__img, .paragraphe2__img {
+            width: 100%;
+            height: 450px;
+            @media (min-width : $bp-mobile-s) and (max-width : $bp-tablet) {
+                height: 250px;
+            }
+            background-size: cover;
+            background-repeat: no-repeat; 
+            background-position: center;
+        }
+        .paragraphe3 {
+            margin: 2em auto;
+        }
+     }
+
+}        
+

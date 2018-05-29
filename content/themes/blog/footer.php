@@ -45,7 +45,7 @@
             </div>
 
             <div class="footer__nav__list-item col-6 col-lg-3">
-                <a href="#" class="footer__nav__list-item__link subtitle">Connexion</a>
+                <a href="#" class="footer__nav__list-item__link subtitle">Politique de confidentialité</a>
             </div>
 
             <!-- Social nav pour mobile et tablet -->

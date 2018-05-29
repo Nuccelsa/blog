@@ -1,7 +1,8 @@
-/vendor
-/wp
+/vendor/
+/wp/
 
 /content/languages/
 /content/themes/twentyseventeen
+/content/debug.log
 wp-config.php
 todo.md

@@ -17,12 +17,6 @@
             <a class="nav-link" href="#">Articles</a>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="recherche" placeholder="Je cherche..." aria-label="Recherche">
-            <button class="btn button__search my-2 my-sm-0" type="submit">
-            <i class="fa fa-search mr-2" aria-hidden="true"></i>
-                Je trouve
-            </button>
-        </form>
+        <?php get_search_form(); ?>
     </div>
 </nav> <!-- Fin top nav -->

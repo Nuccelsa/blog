@@ -9,8 +9,8 @@ if(!function_exists('surlesroutes_setup'))
 
         /* On rend possible l'ajout de menus dans le BO */
         register_nav_menus([
-            'main-nav' => 'Navigation principale (top)',
-            'aside-nav' => 'Navigation secondaire (côté)'
+            'main-nav' => 'Navigation du haut',
+            'aside-nav' => 'Réseaux sociaux'
         ]);
 
         /* On rend possible l'ajout de thumbnail */

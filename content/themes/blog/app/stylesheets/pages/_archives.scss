@@ -9,19 +9,21 @@
 
   /* Container archives */
 .archives {
-  margin-top:15em;
+  margin-top: 15em;
+  
   /* Une "carte" */
     &__card {
-      /* La forme losange */
+      margin-bottom: 8em;
+
+      /* Partie image */
+      /* Forme losange */
       &__shape {
-        
-        width:250px; 
-        height:250px;
+        /* width:250px; 
+        height:250px; */
         overflow:hidden;
-        box-shadow: 0 0 80px $shadow-1;
+        box-shadow: 0 0 60px $shadow-1;
         position: relative;
         transform: rotate(45deg);
-
         /* L'image */
         .archives__card__img {
           width:250px; 
@@ -34,5 +36,42 @@
         }
       }
 
+      /* Partie texte */
+      &__content {
+        margin-left: 10em;
+        margin-top: 1.5em;
+        /* Titre */
+        &__title {
+          font-size: 2.5em;
+          margin-top:0;
+        }
+        /* Extrait */
+        &__excerpt {
+          font-size:1.5em;
+        }
+        /* Lien */
+        &__link {
+          text-transform: uppercase;
+          color: $primary;
+          border: 2px solid $primary;
+          border-radius: 5px;
+          padding: 0.7em;
+          transition: $medium;
+        }
+        &__link::after {
+          content: '\f178';
+          font-family: 'FontAwesome';
+          position: relative;
+          padding-left: 2em;
+          font-size: 1.3em;
+        }
+        &__link:hover {
+          color: $shadow-3;
+          border-color: $shadow-3;
+          transition: $medium;
+        }
+       }
     }
+  
+    
 }

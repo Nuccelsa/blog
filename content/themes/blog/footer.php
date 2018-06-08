@@ -1,4 +1,4 @@
-</main> <!-- Fin du main -->
+</div> <!-- Fin de la div main -->
     
     <footer class="footer ">
 

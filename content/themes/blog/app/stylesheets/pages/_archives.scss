@@ -6,3 +6,33 @@
     transform: scale(1.5);
     transition: .3s ease-in-out;
   } */
+
+  /* Container archives */
+.archives {
+  margin-top:15em;
+  /* Une "carte" */
+    &__card {
+      /* La forme losange */
+      &__shape {
+        
+        width:250px; 
+        height:250px;
+        overflow:hidden;
+        box-shadow: 0 0 80px $shadow-1;
+        position: relative;
+        transform: rotate(45deg);
+
+        /* L'image */
+        .archives__card__img {
+          width:250px; 
+          height:250px;
+          background-size: cover;
+          background-repeat: no-repeat; 
+          background-position: center;
+          position: relative;
+          transform: rotate(-45deg) scale(1.5);
+        }
+      }
+
+    }
+}

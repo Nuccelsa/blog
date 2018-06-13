@@ -1,6 +1,32 @@
 <?php get_header(); ?>
 
-     <?php get_template_part('template-parts/homepage/section', 'slider');?>
-     <?php get_template_part('template-parts/homepage/section', 'posts');?>
+    <!-- Slider -->
+    <?php get_template_part('template-parts/homepage/section', 'slider');?>
+
+    <!-- Articles -->
+    <section class="content">
+        <h2 class="content__title">Derniers articles</h2>
+        <div class="last__posts d-flex flex-wrap">
+
+        <?php
+        $arg_query_posts = [
+            'post_type' => 'post',
+            'post_per_page' => 6,
+            'order' => 'DESC'
+        ];
+
+        $query_posts = new WP_Query($arg_query_posts);
+        if($query_posts->have_posts()) {
+            while ($query_posts->have_posts()) {
+                $query_posts->the_post();
+                get_template_part('template-parts/homepage/section', 'posts');
+            }
+            wp_reset_postdata();
+        } 
+        ?>
+        
+        </div>
+    </section> <!-- Fin articles -->
+
 
 <?php get_footer(); ?>

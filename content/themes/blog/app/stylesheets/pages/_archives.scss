@@ -14,6 +14,8 @@
   /* Une "carte" */
     &__card {
       margin-bottom: 8em;
+      padding-bottom:5em;
+      border-bottom: 1px solid $shadow-4;
 
       /* Partie image */
       /* Forme losange */
@@ -48,8 +50,9 @@
         /* Extrait */
         &__excerpt {
           font-size:1.5em;
+          margin-bottom: 2em;
         }
-        /* Lien */
+        /* Bouton-lien */
         &__link {
           text-transform: uppercase;
           color: $primary;
@@ -58,16 +61,23 @@
           padding: 0.7em;
           transition: $medium;
         }
-        &__link::after {
-          content: '\f178';
-          font-family: 'FontAwesome';
-          position: relative;
-          padding-left: 2em;
-          font-size: 1.3em;
-        }
         &__link:hover {
           color: $shadow-3;
           border-color: $shadow-3;
+          transition: $medium;
+            &:after {
+              padding-left: 2em;
+              color: $shadow-3;
+              transition: $medium;
+            }
+        }
+        &__link::after {
+          content: '\f178';
+          font-family: 'FontAwesome';
+          color: $primary;
+          position: relative;
+          padding-left: 1.2em;
+          font-size: 1.3em;
           transition: $medium;
         }
        }

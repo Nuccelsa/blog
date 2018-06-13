@@ -1,4 +1,3 @@
- <!-- Slider -->
  <section class="banner">
     
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

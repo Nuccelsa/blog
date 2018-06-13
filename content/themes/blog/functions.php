@@ -21,4 +21,5 @@ if(!function_exists('surlesroutes_setup'))
 add_action('after_setup_theme', 'surlesroutes_setup');
 
 require get_theme_file_path('inc/scripts.php');
+require get_theme_file_path('inc/add-on.php');
 require get_theme_file_path('inc/theme-cleaner.php');

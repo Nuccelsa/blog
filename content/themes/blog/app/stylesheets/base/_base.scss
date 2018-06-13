@@ -14,7 +14,7 @@ body {
 Comportement des liens
  */
 // Liens de la main nav
-a, .main__nav .navbar-brand, .main__nav__ul .nav-item .nav-link {
+a, .main__nav .navbar-brand, .navbar-light .navbar-nav .nav-link {
   color : $shadow-2;
   text-decoration: none;
   transition : color $medium;

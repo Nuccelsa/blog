@@ -7,7 +7,15 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="main__nav__ul navbar-nav ml-auto mr-auto">
-            <li class="nav-item">
+            <?php 
+            $args_main_nav = [
+                'container' => false,
+                'items_wrap' => '%3$s',
+                'theme_location' => 'main-nav'
+            ];
+            echo strip_tags(wp_nav_menu($args_main_nav), '<a>');
+            ?>
+            <!-- <li class="nav-item">
             <a class="nav-link" href="#">A propos de moi</a>
             </li>
             <li class="nav-item">
@@ -15,7 +23,7 @@
             </li>
             <li class="nav-item">
             <a class="nav-link" href="#">Articles</a>
-            </li>
+            </li> -->
         </ul>
         <?php get_search_form(); ?>
     </div>

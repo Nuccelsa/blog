@@ -9,12 +9,13 @@
         <div class="last__posts d-flex flex-wrap">
 
         <?php
+        // Arguments pour la requête visant à récupérer les derniers articles
         $arg_query_posts = [
             'post_type' => 'post',
             'post_per_page' => 6,
             'order' => 'DESC'
         ];
-
+        // Custom loop
         $query_posts = new WP_Query($arg_query_posts);
         if($query_posts->have_posts()) {
             while ($query_posts->have_posts()) {
@@ -26,7 +27,8 @@
         ?>
         
         </div>
-    </section> <!-- Fin articles -->
+    </section> 
+    <!-- Fin articles -->
 
 
 <?php get_footer(); ?>

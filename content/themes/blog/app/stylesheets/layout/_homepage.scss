@@ -20,7 +20,7 @@ h2 {
 
   /* Un article */
   &__card {
-    padding: 1.5em 1em;
+    /* padding: 1.5em 1em; */
     width: 25%;
     @media (min-width : $bp-mobile-s) and (max-width : $bp-tablet) {
       width : 100%;
@@ -38,7 +38,6 @@ h2 {
     /* Titre-lien */
     &__title, h2 {
       @include title-font;
-      padding-left: 1.2em;
       margin-top: 1.5em;
       @media (min-width : $bp-mobile-s) and (max-width : $bp-laptop-s) {
         margin-top: 0.5em;
@@ -50,9 +49,13 @@ h2 {
 
     /* Extrait */
     &__content {
-      padding:  0 4.5em 0 4.5em;;
+      padding: 0 1em 0 1em;
       margin-top: 1em;
       color : $light;
+      @media (min-width : $bp-laptop-s) {
+        padding: 0 5em 1em 5em;
+        font-size: 1.2em;
+      }
     }
 
     /* Effet de flash rouge */

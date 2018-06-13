@@ -3,7 +3,7 @@
             <a href="#"><?php the_title();?></a>
         </h2>
         <div class="last__posts__card__content">
-            <p><?php the_excerpt(); ?>t</p>
+            <?php the_excerpt(); ?>
         </div>
     </article>
     

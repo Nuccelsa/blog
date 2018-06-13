@@ -1,24 +1,33 @@
 /* Spécifique à archives */
 
-/* hover images {
+/* hover {
     filter: blur(2px);
-    transition: .7s;
     transform: scale(1.5);
     transition: .3s ease-in-out;
-  } */
+} */
 
   /* Container archives */
 .archives {
   margin-top: 15em;
+  @media (min-width: $bp-mobile-s) and (max-width: $bp-mobile-l) {
+    margin-left: 4em;
+  }
+  @media (min-width: $bp-tablet) and (max-width: $bp-laptop-s) {
+    margin-left: 10em;
+  }
   
-  /* Une "carte" */
+    /* Une "carte" */
     &__card {
       margin-bottom: 8em;
-      padding-bottom:5em;
+      padding-bottom:6em;
       border-bottom: 1px solid $shadow-4;
+      @media (max-width:$bp-laptop-s) {
+        width: 90%;
+      }
 
-      /* Partie image */
-      /* Forme losange */
+    /* Partie image */
+
+      /* Forme de losange */
       &__shape {
         /* width:250px; 
         height:250px; */
@@ -26,6 +35,9 @@
         box-shadow: 0 0 60px $shadow-1;
         position: relative;
         transform: rotate(45deg);
+        @media (max-width: $bp-mobile-l) {
+          margin: 0 auto;
+        }
         /* L'image */
         .archives__card__img {
           width:250px; 
@@ -42,6 +54,13 @@
       &__content {
         margin-left: 10em;
         margin-top: 1.5em;
+        @media (min-width: $bp-mobile-s) and (max-width: $bp-mobile-l) {
+          margin: 4em auto 0;
+        }
+        @media (max-width: $bp-tablet) {
+          margin-left: 7em;
+        }
+
         /* Titre */
         &__title {
           font-size: 2.5em;
@@ -61,6 +80,17 @@
           padding: 0.7em;
           transition: $medium;
         }
+        /* Flèche fontawesome */
+        &__link::after {
+          content: '\f178';
+          font-family: 'FontAwesome';
+          color: $primary;
+          position: relative;
+          padding-left: 1.2em;
+          font-size: 1.3em;
+          transition: $medium;
+        }
+        /* Effet au hover sur le lien */
         &__link:hover {
           color: $shadow-3;
           border-color: $shadow-3;
@@ -71,16 +101,7 @@
               transition: $medium;
             }
         }
-        &__link::after {
-          content: '\f178';
-          font-family: 'FontAwesome';
-          color: $primary;
-          position: relative;
-          padding-left: 1.2em;
-          font-size: 1.3em;
-          transition: $medium;
-        }
-       }
+      }
     }
   
     

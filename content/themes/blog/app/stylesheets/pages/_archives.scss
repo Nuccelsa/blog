@@ -52,13 +52,15 @@
 
       /* Partie texte */
       &__content {
-        margin-left: 10em;
         margin-top: 1.5em;
         @media (min-width: $bp-mobile-s) and (max-width: $bp-mobile-l) {
           margin: 4em auto 0;
         }
-        @media (max-width: $bp-tablet) {
+        @media (min-width: $bp-tablet) {
           margin-left: 7em;
+        }
+        @media (min-width: $bp-laptop-s) {
+          margin-left: 10em;
         }
 
         /* Titre */

@@ -1,4 +1,4 @@
-<section class="banner slider-tab">
+<section class="banner slider-mobile">
     
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 

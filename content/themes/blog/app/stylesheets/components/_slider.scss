@@ -1,3 +1,14 @@
+.slider-mobile{
+    @media (min-width: 767px) {
+        display:none;
+    }
+}
+.slider-tab{
+    @media (min-width: $bp-mobile-s) and (max-width: 767px) {
+        display:none;
+    }
+}
+
 .banner {
 
     &__slider {
@@ -12,13 +23,13 @@
     /* Style du titre */
     &__slider__title {
         @media (min-width: $bp-mobile-s) {
-            font-size: 1.7em;
+            font-size: 2em;
         }
         @media (min-width: $bp-tablet) {
-            font-size: 2.5em;
+            font-size: 3.5em;
         }
         @media (min-width: $bp-laptop-m) {
-            font-size: 4em;
+            font-size: 4.5em;
         }
         @media (min-width: $bp-4k) {
             font-size: 7em;
@@ -29,6 +40,32 @@
     /* Position du titre sur le slider */
     .carousel-caption {
          top: 5px;
+         @media (max-width: $bp-mobile-s) {
+            top: -20px;
+        }
     }
+
+    /* Hauteur slider */
+
+.carousel-item{
+    @media (min-width: $bp-laptop-m) {
+        max-height:900px;
+    }
+}
+    /* Controls */
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        @media (max-width: $bp-tablet) {
+            width: 35px !important;
+            height: 30px;
+        }
+        @media (min-width: $bp-tablet) {
+            width: 55px !important;
+            height: 35px;
+        }
+        @media (min-width: $bp-4k) {
+            width: 55px !important;
+            height: 100px;
+        }
+     }
 }
 

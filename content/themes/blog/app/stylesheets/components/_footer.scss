@@ -1,9 +1,8 @@
 /* FOOTER */
 
 .footer {
-  padding-top: 3em;
+  padding: 3em 3em 2.5em 3em;
   background-image: linear-gradient(90deg, $shadow-6, $shadow-4, $shadow-6);
-  padding-bottom: 2.5em;
   
   // Titre et copyright
   &__title {

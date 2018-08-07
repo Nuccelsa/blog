@@ -23,6 +23,3 @@
 
     </header>
 
-    <?php get_template_part('template-parts/homepage/section', 'slider-mobile');?>
-
-    <div class="main">

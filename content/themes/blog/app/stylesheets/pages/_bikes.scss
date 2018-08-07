@@ -3,7 +3,7 @@
 .bikes {
     
     /* Titre */
-    .bikes__title {
+    &__title {
         margin-bottom: 5em;
         @media (min-width: $bp-mobile-s) {
             margin-top: 4em;
@@ -15,7 +15,7 @@
     }
 
    /*  Div ronde */
-    .bikes__shape {
+    &__shape {
         @media (min-width: $bp-mobile-s) {
             width: 70%;
             height: 30%;
@@ -72,11 +72,8 @@
                 transition: $medium;
             }
         }
-
     }
-}
-
-/* Margin avant footer */
-.footer__bikes {
-    margin-top: 12em;
+  &__content{
+    margin-bottom: 50px;
+  }
 }

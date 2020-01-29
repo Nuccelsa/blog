@@ -1,0 +1,26 @@
+/* Couleurs */
+$primary:      #9b1926 !default;
+$light:        #f8f9fa !default;
+$x-light:      #fff !default;
+$shadow-1:     #ced4da !default;
+$shadow-2:     #adb5bd !default;
+$shadow-3:     #868e96 !default;
+$shadow-4:     #60676d !default;
+$shadow-5:     #474e55 !default;
+$shadow-6:     #212529 !default;
+$dark:         #000 !default;
+
+/* Classes pour couleurs dynamiques */
+.color-primary{
+  color : $primary !important;
+}
+.color-light{
+  color: $light !important;
+}
+.color-dark{
+  color: $dark !important;
+}
+.color-text{
+  color: $shadow-4 !important;
+}
+

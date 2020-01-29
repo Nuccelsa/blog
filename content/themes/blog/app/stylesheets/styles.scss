@@ -1,5 +1,6 @@
 @import 'abstracts/mixins',
-        'abstracts/variables';
+        'abstracts/variables',
+        'abstracts/colors';
 
 @import 'base/base';
 
@@ -11,8 +12,7 @@
 @import 'layout/homepage';
 
 @import 'pages/archives',
-        'pages/bike-gravel',
-        'pages/bike-race',
+        'pages/bike',
         'pages/bikes',
         'pages/home',
         'pages/presentation';

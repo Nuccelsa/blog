@@ -26,23 +26,23 @@
             font-size: 2em;
         }
         @media (min-width: $bp-tablet) {
-            font-size: 3.5em;
+            font-size: 3em;
         }
-        @media (min-width: $bp-laptop-m) {
-            font-size: 4.5em;
+        @media (min-width: $bp-laptop-s) {
+            font-size: 4em;
         }
+      @media (min-width: $bp-laptop-m) {
+        font-size: 5em;
+      }
         @media (min-width: $bp-4k) {
-            font-size: 7em;
+            font-size: 6em;
         }
         color: $primary;
     }
 
     /* Position du titre sur le slider */
     .carousel-caption {
-         top: 5px;
-         @media (max-width: $bp-mobile-s) {
-            top: -20px;
-        }
+         top: -30px;
     }
 
     /* Hauteur slider */

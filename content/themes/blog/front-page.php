@@ -24,6 +24,7 @@
             }
             wp_reset_postdata();
         } 
+
         ?>
         
         </div>
